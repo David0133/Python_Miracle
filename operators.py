@@ -6,7 +6,7 @@ print(num1 - 2)
 print(num1 * 2)
 print(num1 / 2)
 print(num1 // 2)
-print(num1 ** 2)
+print(num1 ** 2)  # exponential
 print(num1 % 2)
 
 # Comparison operator
@@ -26,11 +26,11 @@ else:
     print("You are not allowed for the admission")
 
 value = True
-print(not(value))
+print(not (value))
 
 student_list = ["Aakash", "Vikash", "Mahendra", "David", "Faizan", "Narendra"]
 student_name = "Aakash"
-if student_name in student_list :
+if student_name in student_list:
     print("Present")
 else:
     print("Not present")

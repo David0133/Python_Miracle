@@ -160,3 +160,23 @@
 # ls.reverse()
 # st = str(ls)
 # print(st)
+
+
+#ATM simulation
+balance = 0
+print("Welcome to Miracle ATM ")
+while True:
+    print("Choose option : Balance inquery - B Withdraw - W ADD - A  Exit - X")
+    task = input(" ")
+    task.lower()
+    if task == "a":
+        amount = int(input("Enter the amount "))
+        balance = balance + amount
+    elif task == "w":
+        amount = int(input("Enter the amount you want to withdraw"))
+        balance = balance - amount
+
+    elif task == "b" :
+        print("Your current balance in the account is - ", balance)
+    elif task == "x":
+        break

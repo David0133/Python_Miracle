@@ -1,4 +1,6 @@
+
 # 1. Write a program that takes a user's name and age and prints a message with this information
+
 # user_name = input("Enter your good name")
 # age = int(input("Enter your age : "))
 #
@@ -41,31 +43,14 @@
 # else:
 #     print("Wrong selection of operation enter valid operation")
 
-# 3. Palindrome
+# 3 Random Password
 
-# def palindrome(name, first, last):
-#     length = name.__len__()
-#     mid = int((length-1)/2)
-#     # print(mid)
-#
-#     if length < 1:
-#         return print("Invalid")
-#     if length == 1:
-#         return print("palindrome")
-#     for i in name:
-#         if name[first] == name[last] and first!=mid:
-#             first = first + 1
-#             last = last - 1
-#         elif first == mid and name[first] == name[last]:
-#             return print("Palindrome")
-#         else:
-#             return print("Not a palindrome")
-#
-#
-# palin_drome = list(input("Enter the word - "))
-# first_index = 0
-# last_index = palin_drome.__len__() - 1
-# palindrome(palin_drome, first_index, last_index)
+# user_input = list(input("Enter your some character and special symbol to generate password "))
+# random.shuffle(user_input)
+# password = ""
+# for i in user_input:
+#     password += i
+# print("Your randomly generated Password is ", password)
 
 # 4. Fahrenheit to celsius
 
@@ -107,7 +92,60 @@
 #         break
 # print(to_do_bucket)
 
-# 6 Number occurrence of a word
+
+# 6. Palindrome
+
+# def palindrome(name, first, last):
+#     length = name.__len__()
+#     mid = int((length-1)/2)
+#     # print(mid)
+#
+#     if length < 1:
+#         return print("Invalid")
+#     if length == 1:
+#         return print("palindrome")
+#     for i in name:
+#         if name[first] == name[last] and first!=mid:
+#             first = first + 1
+#             last = last - 1
+#         elif first == mid and name[first] == name[last]:
+#             return print("Palindrome")
+#         else:
+#             return print("Not a palindrome")
+#
+#
+# palin_drome = list(input("Enter the word - "))
+# first_index = 0
+# last_index = palin_drome.__len__() - 1
+# palindrome(palin_drome, first_index, last_index)
+
+# 7. ATM simulation
+
+# balance = 0
+# print("Welcome to Miracle ATM ")
+# while True:
+#     print("Choose option : Balance inquery - B Withdraw - W ADD - A  Exit - X")
+#     task = input(" ")
+#     task.lower()
+#     if task == "a":
+#         amount = int(input("Enter the amount "))
+#         balance = balance + amount
+#     elif task == "w":
+#         amount = int(input("Enter the amount you want to withdraw"))
+#         balance = balance - amount
+#
+#     elif task == "b":
+#         print("Your current balance in the account is - ", balance)
+#     elif task == "x":
+#         break
+
+# 8. multiplication table
+# table_of = int(input("Enter whose table you want to print : "))
+# for i in range(1, 11):
+#     print(f"{table_of} x {i} =", table_of * i)
+
+
+# 9 Number occurrence of a word
 
 # ls3 = ["mango", "guava", "orange", "apple", "grapes", "grapes", "apple", "apple"]
 # occurrence = input("Enter which fruit occurrence you want option's are\n"
@@ -117,7 +155,7 @@
 # print(f"The occurrence of the give fruit {occurrence} is {fruit_count} ")
 
 
-# 7 Write a program that checks if a given number is a prime number.
+# 10 Write a program that checks if a given number is a prime number.
 
 
 # user_input = int(input("Enter a number to check : "))
@@ -129,7 +167,7 @@
 #     print(f"The given value {user_input} is a prime number : ")
 
 
-# 8. Implement a basic text-based game (e.g., a quiz or a simple guessing game).
+# 11. Implement a basic text-based game (e.g., a quiz or a simple guessing game).
 
 # print("Welcome to the game of guessing character's : ")
 # to_find = "o"
@@ -150,7 +188,7 @@
 #         print(f"Remaining chance {left} ")
 
 
-# 9. Create a program that reads data from a text file and prints it in reverse order
+# 12. Create a program that reads data from a text file and prints it in reverse order
 
 
 # file_object = open("temp.txt", "r")
@@ -162,21 +200,21 @@
 # print(st)
 
 
-#ATM simulation
-balance = 0
-print("Welcome to Miracle ATM ")
-while True:
-    print("Choose option : Balance inquery - B Withdraw - W ADD - A  Exit - X")
-    task = input(" ")
-    task.lower()
-    if task == "a":
-        amount = int(input("Enter the amount "))
-        balance = balance + amount
-    elif task == "w":
-        amount = int(input("Enter the amount you want to withdraw"))
-        balance = balance - amount
 
-    elif task == "b" :
-        print("Your current balance in the account is - ", balance)
-    elif task == "x":
-        break
+
+# 13 Guess the number
+# def guess_the_number(chance):
+#     random_num = int(random.random() * 100)
+#     while chance < 2:
+#         user_guess = int(input("Enter your guessing number between 0 to 100 Only positive number allow : "))
+#         if random_num == user_guess:
+#           return print("Wow you guess it right ")
+#         else:
+#             chance += 1
+#             print(f"You have only {2 - chance}")
+#     return print("Better luck next time ")
+#
+#
+# chance = 0
+# print("Welcome to the guess game you have to guess the number under 2 chance \n\n")
+# guess_the_number(chance)

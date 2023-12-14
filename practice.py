@@ -1,4 +1,3 @@
-
 # 1. Write a program that takes a user's name and age and prints a message with this information
 
 # user_name = input("Enter your good name")
@@ -198,8 +197,6 @@
 # ls.reverse()
 # st = str(ls)
 # print(st)
-
-
 
 
 # 13 Guess the number

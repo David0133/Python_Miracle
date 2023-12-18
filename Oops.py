@@ -9,6 +9,7 @@ class Employee:
     nn = 20
 
     def __init__(self):
+
         print("This is default constructor")
 
     def __init__(self, name, age, address, designation, organization):

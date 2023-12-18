@@ -47,7 +47,7 @@
 # user_input = list(input("Enter your some character and special symbol to generate password "))
 # random.shuffle(user_input)
 # password = ""
-# for i in user_input:
+#d for i in user_input:
 #     password += i
 # print("Your randomly generated Password is ", password)
 
@@ -56,8 +56,6 @@
 # def fahr2celsius(value):
 #     c = (value - 32) * 5 / 9
 #     return c
-#
-#
 # value_in_fahrenheit = int(input("Enter the value in fahrenheit - "))
 # result = int(fahr2celsius(value_in_fahrenheit))
 # print("The result of fahrenheit to celsius is - ", result, "C")

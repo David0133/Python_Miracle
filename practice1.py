@@ -145,3 +145,32 @@
 #     else:
 #         ls.remove(i)
 # print(ls)
+
+# 12 .Perform set union, intersection, and difference operations.
+s = {1, 2, 3, 4, 5}
+t = {1, 2, 6, 7}
+
+# Union method make a new set and check the existing elements and the new elements
+result = s.union(t)
+
+# interaction method find's the common elements of two set and give a new set
+interac = s.intersection(t)
+
+# difference method is used to find out the different elements of two sets
+# diff = s.difference(t)
+#
+# print("union method", result)
+# print("interaction method", interac)
+# print("Difference method", diff)
+#
+# # Check if one set is a subset of another
+length1 = len(s)
+length2 = len(t)
+size = 0
+if length1 > length2:
+    size = length1
+else:
+    size = length2
+
+count = 0
+print()

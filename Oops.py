@@ -8,9 +8,9 @@ class Employee:
     # Constructor
     nn = 20
 
-    def __init__(self):
-
-        print("This is default constructor")
+    # def __init__(self):
+    #
+    #     print("This is default constructor")
 
     def __init__(self, name, age, address, designation, organization):
         self.name = name
@@ -26,5 +26,5 @@ class Employee:
 obj = Employee("David", 23, "Home", "FSD", "Deloitte")
 obj.display_data()
 
-obj1 = Employee()
-print(obj1)
+# obj1 = Employee()
+# print(obj1)

@@ -33,9 +33,10 @@
 # obj.__int__(12)
 # obj.display()
 
-# Create a base class Shape with methods area and display.
-# Derive two subclasses Circle and Rectangle from Shape.
-# Override the area method in each subclass and demonstrate polymorphism.
+"""Create a base class Shape with methods area and display.
+ Derive two subclasses Circle and Rectangle from Shape.
+ Override the area method in each subclass and demonstrate polymorphism.
+"""
 
 # class Shape:
 #     length = 0
@@ -166,16 +167,20 @@ Add attributes specific to each subclass, such as grade for Student and subject 
 Display the details of a student and a teacher.
 """
 
+
 class Person:
     name = ""
     address = ""
-    def __int__(self,n,a):
+
+    def __int__(self, n, a):
         self.name = n
         self.address = a
 
+
 class Student(Person):
     grade = ""
-    def __int__(self,g,n,a):
+
+    def __int__(self, g, n, a):
         self.name = n
         self.address = a
         self.grade = g
@@ -183,11 +188,13 @@ class Student(Person):
     def studentDetail(self):
         print(f"The Student name {self.name} got grade's {self.grade} and address {self.address}")
 
+
 class Teacher(Person):
     subject = ""
-    def __int__(self,s,n,a):
+
+    def __int__(self, s, n, a):
         self.name = n
-        self.address =a
+        self.address = a
         self.subject = s
 
     def teacherDetails(self):
@@ -195,9 +202,9 @@ class Teacher(Person):
 
 
 student = Student()
-student.__int__("A","David","Bhopal")
+student.__int__("A", "David", "Bhopal")
 student.studentDetail()
 
 teacher = Teacher()
-teacher.__int__("English","RK","Bhopal")
+teacher.__int__("English", "RK", "Bhopal")
 teacher.teacherDetails()

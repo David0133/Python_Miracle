@@ -19,6 +19,7 @@ class Employee:
         self.designation = designation
         self.organization = organization
 
+
     def display_data(self):
         print(self.name, self.age, self.address, self.designation, self.organization)
 
@@ -28,3 +29,4 @@ obj.display_data()
 
 # obj1 = Employee()
 # print(obj1)
+# obj1
